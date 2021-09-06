@@ -2,7 +2,7 @@
 
 namespace AS00
 {
-    class Program
+    public class Program
     {
 
         public static void Main(string[] args)
