@@ -20,7 +20,6 @@ namespace AS00.Tests
             var output = writer.GetStringBuilder().ToString().Trim();
             Assert.Equal("Hello World!", output);
         }
-
         [Fact]
         public void is_it_a_leapYear(){
     
