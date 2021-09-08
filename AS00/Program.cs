@@ -10,6 +10,7 @@ namespace AS00
             Console.WriteLine("Hello World!");
         }
 
+ 
         public bool IsLeapYear(int year){
             if(year%4 == 0){
                 if(year%100 != 0 || year%400 == 0)
@@ -17,8 +18,27 @@ namespace AS00
             }else {
                 return false;
             }
-
             return false;
+        }
+
+        public static void UserInputIsLeapYear(){
+            try{
+
+                int input = Convert.ToInt32(Console.ReadLine());
+
+                if(input < 1582){
+                    throw new ArgumentException("The year has to be 1582 or bigger");
+                }
+
+                if(IsLeapYear(input)){
+                    Console.WriteLine("yay");
+                }else{
+                    Console.WriteLine("nay");
+                }
+
+            }catch(ArgumentException e){
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
