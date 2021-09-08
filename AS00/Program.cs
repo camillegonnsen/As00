@@ -10,15 +10,14 @@ namespace AS00
             Console.WriteLine("Hello World!");
         }
 
-        public static bool IsLeapYear(int year){
+ 
+        public bool IsLeapYear(int year){
             if(year%4 == 0){
-                if(year%100 != 0 || year%400 == 0){
-                    return true;
-                }
+                if(year%100 != 0 || year%400 == 0)
+                return true;
             }else {
                 return false;
             }
-
             return false;
         }
 
