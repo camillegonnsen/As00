@@ -25,7 +25,6 @@ namespace AS00.Tests
     
             //Assert
             var output = false;
-            
 
             output = Program.IsLeapYear(2000);
      
